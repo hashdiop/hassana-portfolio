@@ -82,7 +82,7 @@ export const metadata: Metadata = {
   },
 
   /* ── Verification Search Console (remplace par ton code) ── */
-  verification: { google: 'VOTRE_CODE_ICI' },
+  verification: { google: '74h99nLI30lqqCg4ViTdB5hrstV7MvoxM3-FFSgPCBE' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -1,10 +1,10 @@
 import Script from 'next/script'
 
 // ── Remplace par ton ID GA4 (format G-XXXXXXXXXX) ──
-const GA_ID = 'G-XXXXXXXXXX'
+const GA_ID = 'G-SW29KKQ1RE'
 
 export default function Analytics() {
-  if (!GA_ID || GA_ID === 'G-XXXXXXXXXX') return null
+  if (!GA_ID) return null
 
   return (
     <>

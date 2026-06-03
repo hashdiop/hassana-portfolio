@@ -35,6 +35,42 @@ export default function Page() {
 
   return (
     <>
+      {/* ── JSON-LD Structured Data ── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([
+          {
+            '@context': 'https://schema.org',
+            '@type':    'Person',
+            name:       'Cheikh Hassana Diop',
+            url:        'https://www.hashpro.tech',
+            jobTitle:   'Développeur MERN Fullstack',
+            sameAs: [
+              'https://github.com/',
+              'https://linkedin.com/in/',
+            ],
+            address: {
+              '@type':         'PostalAddress',
+              addressLocality: 'Dakar',
+              addressCountry:  'SN',
+            },
+            knowsAbout: ['React', 'Node.js', 'MongoDB', 'Express', 'JavaScript', 'TypeScript'],
+          },
+          {
+            '@context':   'https://schema.org',
+            '@type':      'WebSite',
+            name:         'CHD Dev',
+            url:          'https://www.hashpro.tech',
+            description:  'Portfolio de Cheikh Hassana Diop, développeur MERN Fullstack basé à Dakar.',
+            inLanguage:   ['fr', 'en'],
+            author: {
+              '@type': 'Person',
+              name:    'Cheikh Hassana Diop',
+            },
+          },
+        ]) }}
+      />
+
       <ThemePicker />
       <Loader />
       <ScrollToTop />

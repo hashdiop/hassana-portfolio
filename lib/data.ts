@@ -108,13 +108,13 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 2,
-    title: 'HashPro.tech',
-    descFr: 'Application web full-stack développée et déployée en production — architecture MERN complète, interface moderne et expérience utilisateur soignée.',
-    descEn: 'Full-stack web application built and deployed in production — complete MERN architecture, modern interface and polished user experience.',
+    title: 'Locges',
+    descFr: 'Application de gestion locative — architecture MERN complète, interface moderne et expérience utilisateur soignée.',
+    descEn: 'Property rental management application — complete MERN architecture, modern interface and polished user experience.',
     tags: ['React', 'Node.js', 'MongoDB', 'Express'],
     color: '#4f8ef7',
     github: '#',
-    live: 'https://www.hashpro.tech',
+    live: 'https://locges-v1.vercel.app/',
   },
   {
     id: 3,

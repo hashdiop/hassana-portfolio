@@ -3,6 +3,7 @@ import { Space_Mono, Syne } from 'next/font/google'
 import './globals.css'
 import { LangProvider }   from '@/context/LangContext'
 import { AccentProvider } from '@/context/AccentContext'
+import Analytics           from '@/components/Analytics'
 
 const spaceMono = Space_Mono({ weight: ['400','700'], variable: '--font-space-mono', subsets: ['latin'], display: 'swap' })
 const syne      = Syne({ weight: ['400','700','800'], variable: '--font-syne', subsets: ['latin'], display: 'swap' })
@@ -80,14 +81,15 @@ export const metadata: Metadata = {
     apple:      '/icon.svg',
   },
 
-  /* ── Verification (à remplir après Search Console) ── */
-  // verification: { google: 'VOTRE_CODE_VERIFICATION' },
+  /* ── Verification Search Console (remplace par ton code) ── */
+  verification: { google: 'VOTRE_CODE_ICI' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr" className={`${spaceMono.variable} ${syne.variable}`} suppressHydrationWarning>
       <body suppressHydrationWarning>
+        <Analytics />
         <AccentProvider>
           <LangProvider>
             {children}

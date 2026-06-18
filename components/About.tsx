@@ -67,7 +67,7 @@ export default function About() {
               }}
             >
               <Image
-                src="/photo.jpeg"
+                src="/photo2.jpeg"
                 alt="Cheikh Hassana Diop"
                 fill
                 style={{

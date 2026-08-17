@@ -126,6 +126,16 @@ export const PROJECTS: Project[] = [
     github: '#',
     live: '#',
   },
+  {
+    id: 4,
+    title: 'Order Restaurant App',
+    descFr: 'Application destinee aux restaurants offrant une interface client permettant de passer des commandes.',
+    descEn: 'Application designed for restaurants offering a customer interface for placing orders.',
+    tags: ['React', 'JWt authentication', 'MongoDB'],
+    color: '#bf9b4b',
+    github: '#',
+    live: 'https://my-restaurant-kappa-livid.vercel.app/',
+  },
 ]
 
 

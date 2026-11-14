@@ -128,7 +128,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 4,
-    title: 'Order Restaurant App',
+    title: 'My Restaurant',
     descFr: 'Application destinee aux restaurants offrant une interface client permettant de passer des commandes.',
     descEn: 'Application designed for restaurants offering a customer interface for placing orders.',
     tags: ['React', 'JWt authentication', 'MongoDB'],
